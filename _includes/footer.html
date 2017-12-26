@@ -1,0 +1,47 @@
+<footer id="site-footer">
+  <div class="container">
+    <h1 class="h5 pt-4">{{ site.title | escape }}</h1>
+
+    <div class="row">
+      <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          <li class="text-secondary">
+            {% if site.author %}
+              {{ site.author | escape }}
+            {% else %}
+              {{ site.title | escape }}
+            {% endif %}
+            </li>
+            {% if site.email %}
+            <li><a href="mailto:{{ site.email }}"><span>{{ site.email }}<span></a></li>
+            {% endif %}
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          {% if site.github_username %}
+            <li>
+              <a href="https://github.com/{{ site.github_username }}">
+                <span class="pr-1 align-middle">{% include icon-github.svg %}</span>
+                <span>{{ site.github_username }}</span>
+              </a>
+            </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+            <li>
+              <a href="https://twitter.com/{{ site.twitter_username }}">
+                <span class="pr-1 align-middle">{% include icon-twitter.svg %}</span>
+                <span>{{ site.twitter_username }}</span>
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+      <div class="col-12 col-lg-6">
+        <p class="text-secondary text-justify">{{ site.description | escape }}</p>
+      </div>
+    </div>
+
+  </div>
+</footer>

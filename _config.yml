@@ -1,0 +1,30 @@
+title: minima-reboot
+author: GitHub User
+email: your-email@domain.com
+description: >
+  This is a demo page for minima-reboot, a bootstrap-based rewrite of Jekyll's
+  default minima theme. It is simple, lightweight, and responsive.
+  You can use it with your GitHub Pages site by adding the line
+  "theme: aterenin/minima-reboot" to _config.yml.
+
+github_username:  aterenin/minima-reboot/
+
+minima_reboot:
+  date_format: "%b %-d, %Y"
+  date_format_short: "%b %-d"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+header_pages:
+- about.md
+- posts.md
+
+paginate: 5
+
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - minima-reboot.gemspec
