@@ -34,19 +34,19 @@ layout: default
   {% if site.paginate %}
   <nav class="py-1" aria-label="Blog page navigation">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}">&laquo; Previous</a>
+      <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Previous</a>
     {% endif %}
 
     Page: {{ paginator.page }} of {{ paginator.total_pages }}
 
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}">Next &raquo;</a>
+      <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
     {% endif %}
   </nav>
   {% endif %}
 
   {% if site.plugins contains "jekyll-feed" %}
-    <a href="{{ "/feed.xml" | relative_url }}" style="fill: var(--secondary);">{% include icon-rss.svg %}</a>
+    <a id="rss-icon" href="{{ "/feed.xml" | relative_url }}">{% include icon-rss.svg %}</a>
   {% endif %}
 
 </div>

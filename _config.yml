@@ -16,10 +16,13 @@ minima_reboot:
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-feed
+  - jekyll-redirect-from
 
 header_pages:
 - about.md
 - posts.md
+- github.md
 
 paginate: 5
 

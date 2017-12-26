@@ -1,6 +1,7 @@
 # minima-reboot
 
-`minima-reboot` is a responsive [bootstrap](https//getbootstrap.com) port of Jekyll's default theme, `minima`, whose GitHub repository can be found [here](https://github.com/jekyll/minima).
+`minima-reboot` is a responsive [Bootstrap](https//getbootstrap.com) port of Jekyll's default theme, `minima`. It uses `bootstrap.css` only, and does not load `bootstrap.js`. Documentation for `minima` can can be found [here](https://github.com/jekyll/minima).
+
 
 [Theme preview](https://aterenin.github.io/minima-reboot/)
 
@@ -8,13 +9,13 @@
 
 ## Installation
 
-Add this line to your GitHub Pages site's `_config.yml`
+Add this line to your site's `_config.yml`
 
 ```yaml
 remote_theme: aterenin/minima-reboot
 ```
 
-GitHub pages will automatically enable the theme.
+Jekyll will automatically download and enable the theme, provided it is up to date.
 
 
 ## Files
@@ -28,14 +29,14 @@ The following files are part of the `_layouts` directory.
 
   - `default.html`, `page.html`, `post.html` &mdash; standard layout files exactly as in `minima`.
   - `home.html` &mdash; a home page layout, which supports Jekyll's [pagination](https://jekyllrb.com/docs/pagination/). This can be enabled by setting `paginate` in `_config.yml`.
-  - `posts.html` &mdash; this is a layout which displays a full list of posts by year.
+  - `allposts.html` &mdash; this is a layout which displays a full list of posts by year.
 
 ### Includes
 
 The following files are part of the `_includes` directory.
 
   - `disqus_comments.html`, `footer.html`, `google-analytics.html`, `head.html`, `header.html`, `icon-github`, `icon-twitter` &mdash; standard includes exactly as in `minima`.
-  - `head-extra.html` &mdash; an empty text file where the user may add additional lines that will be inserted into `<head>`. If you want to customize `minima-reboot` and need to include additional style sheets, add them here.
+  - `head-includes.html` &mdash; an empty text file where the user may add additional lines that will be inserted into `<head>`. If you want to customize `minima-reboot` and need to include additional style sheets, add them here.
   - `icon-menu.svg` &mdash; the icon used by the responsive navigation menu.
   - `icon-rss.svg` &mdash; instead of displaying a text RSS link, `minima-reboot` uses an icon.
 
@@ -61,7 +62,7 @@ This can also be used to override any other file as necessary.
 
 ### Loading Scripts
 
-To load an additional script, for example when using [KaTeX](http://github.com/khan/katex/) to typeset mathematical equations on a page, just add the `<script>` files to `_includes/head-extra.html` and they will be added to `<head>`.
+To load an additional script, for example when using [KaTeX](http://github.com/khan/katex/) to typeset mathematical equations on a page, just add the `<script>` to `_includes/head-includes.html` and they will be added to `<head>`.
 
 ### Change default date format
 

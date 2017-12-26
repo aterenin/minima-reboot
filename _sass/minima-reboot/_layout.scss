@@ -45,13 +45,10 @@ body {
   a:hover :last-child {
     text-decoration: underline;
   }
-  svg {
-    height: 16px;
-    width: 16px;
-    path {
-      fill: #868e96;
-    }
-  }
+}
+
+#content #rss-icon, #site-footer svg {
+  fill: var(--secondary);
 }
 
 .highlight {
