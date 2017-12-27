@@ -10,10 +10,6 @@ $responsive-nav-icon-color: #111 !default;
   height: 3.5rem;
 }
 
-#nav-title {
-  margin-right: auto;
-}
-
 #nav-container {
   text-align: right;
   @media (max-width: $responsive-nav-cutoff-width - 1) {

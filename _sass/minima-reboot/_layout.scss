@@ -1,30 +1,26 @@
+$layout-color-secondary: #868e96 !default;
+$layout-color-dark: #343a40 !default;
+$layout-color-border: #e8e8e8 !default;
+$layout-color-background: #fdfdfd !default;
+$layout-color-syntax-highlighting-background: #eef !default;
+
 body {
-  background-color: #fdfdfd
+  background-color: $layout-color-background;
 }
 
 #nav-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
-  a {
-    color: #424242 !important;
-  }
-  a:hover {
-    color: lighten(#424242, 15%) !important;
-  }
-}
-
-#nav-title {
-  font-size: 1.5rem;
+  border-top: 5px solid $layout-color-dark;
+  border-bottom: 1px solid $layout-color-border;
 }
 
 #content {
   h1, h2, h3, h4 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     text-align: left;
   }
   blockquote {
-    border-left: 4px solid #e8e8e8;
+    border-left: 4px solid $layout-color-border;
     padding-left: 1rem;
     font-size: 1.125rem;
     font-style: italic
@@ -38,7 +34,7 @@ body {
 }
 
 #site-footer {
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid $layout-color-border;
   a {
     text-decoration: none;
   }
@@ -48,13 +44,13 @@ body {
 }
 
 #content #rss-icon, #site-footer svg {
-  fill: var(--secondary);
+  fill: $layout-color-secondary;
 }
 
 .highlight {
-  border: 1px solid #e8e8e8;
+  border: 1px solid $layout-color-border;
   border-radius: 3px;
-  background-color: #eef;
+  background-color: $layout-color-syntax-highlighting-background;
   pre {
     padding: 0.75rem;
     margin-bottom: 0rem;

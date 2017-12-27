@@ -1,6 +1,6 @@
 # minima-reboot
 
-`minima-reboot` is a responsive [Bootstrap](https//getbootstrap.com) port of Jekyll's default theme, `minima`. It uses `bootstrap.css` only, and does not load `bootstrap.js`. Documentation for `minima` can can be found [here](https://github.com/jekyll/minima).
+`minima-reboot` is a responsive [Bootstrap](https://getbootstrap.com/) port of Jekyll's default theme, `minima`. It uses `bootstrap.css` only, and does not load `bootstrap.js`. Documentation for `minima` can can be found [here](https://github.com/jekyll/minima).
 
 
 [Theme preview](https://aterenin.github.io/minima-reboot/)
@@ -16,6 +16,8 @@ remote_theme: aterenin/minima-reboot
 ```
 
 Jekyll will automatically download and enable the theme, provided it is up to date.
+
+Alternatively, `minima-reboot` is a [gem-based theme](https://jekyllrb.com/docs/themes/) and can be installed from [rubygems.org](https://rubygems.org/gems/minima-reboot).
 
 
 ## Files
@@ -62,7 +64,7 @@ This can also be used to override any other file as necessary.
 
 ### Loading Scripts
 
-To load an additional script, for example when using [KaTeX](http://github.com/khan/katex/) to typeset mathematical equations on a page, just add the `<script>` to `_includes/head-includes.html` and they will be added to `<head>`.
+To load an additional script, for example when using [KaTeX](https://github.com/khan/katex/) to typeset mathematical equations on a page, just add the `<script>` to `_includes/head-includes.html` and they will be added to `<head>`.
 
 ### Change default date format
 
@@ -83,4 +85,4 @@ These are enabled exactly as in `minima`.
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
