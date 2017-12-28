@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/minima-reboot.svg)](https://badge.fury.io/rb/minima-reboot)
 
-`minima-reboot` is a responsive [Bootstrap](https://getbootstrap.com/) port of Jekyll's default theme, `minima`. It uses `bootstrap.css` only, and does not load `bootstrap.js`. Documentation for `minima` can can be found [here](https://github.com/jekyll/minima).
+`minima-reboot` is a responsive [Bootstrap](https://getbootstrap.com/) port of Jekyll's default theme, `minima`. It uses `bootstrap.css` only, and does not load `bootstrap.js`. Documentation for `minima` can be found [here](https://github.com/jekyll/minima).
 
 
 [Theme preview](https://aterenin.github.io/minima-reboot/)
