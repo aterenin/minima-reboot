@@ -1,11 +1,11 @@
 <header id="nav-header">
-  <div class="container">
+  <div id="nav-container" class="container position-relative d-flex align-items-center">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     <a class="h4 mb-0 mr-auto text-dark" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
     {% if page_paths %}
-      <nav id="nav-container">
+      <nav id="nav-menu-container">
         <input type="checkbox" id="nav-trigger"/>
         <label for="nav-trigger" id="nav-trigger-label">
           {% include icon-menu.svg %}

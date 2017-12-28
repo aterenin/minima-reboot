@@ -3,14 +3,11 @@ $responsive-nav-border-color: #e8e8e8 !default;
 $responsive-nav-background-color: #fdfdfd !default;
 $responsive-nav-icon-color: #111 !default;
 
-#nav-header > div {
-  position: relative;
-  display: flex;
-  align-items: center;
+#nav-container {
   height: 3.5rem;
 }
 
-#nav-container {
+#nav-menu-container {
   text-align: right;
   @media (max-width: $responsive-nav-cutoff-width - 1) {
     position: absolute;
