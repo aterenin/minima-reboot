@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This is `minima-reboot`, a bootstrap-based rewrite of `minima`, the base Jekyll theme. It is designed to be lightweight, easy-to-use, and responsive.
+This is `minima-reboot`, a Bootstrap-based rewrite of `minima`, the base Jekyll theme. It is designed to be lightweight, easy-to-use, and responsive.
 
 You can find `minima-reboot`'s source code at: [minima-reboot](https://github.com/aterenin/minima-reboot).
 
