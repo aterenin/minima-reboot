@@ -13,6 +13,35 @@ body {
   border-bottom: 1px solid $layout-color-border;
 }
 
+#nav-container {
+  height: 3.5rem;
+}
+
+#nav-menu-container {
+  @media (max-width: 768px - 1) {
+    position: absolute;
+    z-index: 100;
+    top: 0.4375rem;
+    right: 1rem;
+    border: 1px solid $layout-color-border;
+    border-radius: .25rem;
+    background-color: $layout-color-background;
+  }
+}
+
+#nav-trigger-label {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+  svg {
+    fill: darken($layout-color-dark, 15%);
+  }
+}
+
+#nav-trigger:checked ~ #nav-menu {
+  display: block !important;
+}
+
 #content {
   h1, h2, h3, h4 {
     margin-top: 2rem;
@@ -24,9 +53,6 @@ body {
     padding-left: 1rem;
     font-size: 1.125rem;
     font-style: italic
-  }
-  #references {
-    font-size: 1.5rem;
   }
   .footnotes {
     text-align: left;
