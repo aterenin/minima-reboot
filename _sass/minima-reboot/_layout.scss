@@ -1,16 +1,15 @@
-$layout-color-secondary: #868e96 !default;
-$layout-color-dark: #343a40 !default;
-$layout-color-border: #e8e8e8 !default;
+$layout-color-border: #e9ecef !default;
 $layout-color-background: #fdfdfd !default;
-$layout-color-syntax-highlighting-background: #eef !default;
+$layout-color-syntax-highlighting-background: #f8f9fa !default;
+$layout-responsive-nav-cutoff: 768px !default;
 
 body {
   background-color: $layout-color-background;
 }
 
 #nav-header {
-  border-top: 5px solid $layout-color-dark;
-  border-bottom: 1px solid $layout-color-border;
+  border-top: 5px solid !important;
+  border-bottom: 1px solid $layout-color-border !important;
 }
 
 #nav-container {
@@ -18,7 +17,7 @@ body {
 }
 
 #nav-menu-container {
-  @media (max-width: 768px - 1) {
+  @media (max-width: $layout-responsive-nav-cutoff - 1) {
     position: absolute;
     z-index: 100;
     top: 0.4375rem;
@@ -62,7 +61,7 @@ body {
 
 .highlight {
   border: 1px solid $layout-color-border;
-  border-radius: 3px;
+  border-radius: .25rem;
   background-color: $layout-color-syntax-highlighting-background;
   pre {
     padding: 0.75rem;
