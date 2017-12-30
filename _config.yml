@@ -7,26 +7,30 @@ description: >
   You can use it with your GitHub Pages site by adding the line
   "theme: aterenin/minima-reboot" to _config.yml.
 
-github_username:  aterenin/minima-reboot/
-
-minima_reboot:
-  date_format: "%b %-d, %Y"
-  date_format_short: "%b %-d"
-
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-feed
   - jekyll-redirect-from
 
+minima_reboot:
+  date_format: "%b %-d, %Y"
+  date_format_short: "%b %-d"
+
 header_pages:
 - about.md
 - posts.md
 - github.md
 
+footer_icons:
+- username: aterenin/minima-reboot/
+  url: https://github.com/aterenin/minima-reboot/
+  icon: icon-github.svg
+
 paginate: 5
 
 markdown: kramdown
+
 exclude:
   - Gemfile
   - Gemfile.lock

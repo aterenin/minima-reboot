@@ -3,7 +3,7 @@
     <div class="h5 pt-4">{{ site.title | escape }}</div>
 
     <div class="row">
-      <div class="col-6 col-lg-3">
+      <div class="col col-lg-3">
         <ul class="list-unstyled">
           <li class="text-secondary">
             {% if site.author %}
@@ -13,32 +13,26 @@
             {% endif %}
             </li>
             {% if site.email %}
-            <li><a href="mailto:{{ site.email }}"><span>{{ site.email }}</span></a></li>
+              <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {% endif %}
         </ul>
       </div>
+      {% if site.footer_icons %}
       <div class="col-6 col-lg-3">
         <ul class="list-unstyled">
-          {% if site.github_username %}
+          {% for footer_icon in site.footer_icons %}
             <li>
-              <a href="https://github.com/{{ site.github_username }}">
-                <span class="pr-1 align-middle">{% include icon-github.svg %}</span>
-                <span>{{ site.github_username }}</span>
+              <a href="{{ footer_icon.url }}">
+                {% if footer_icon.icon %}
+                {% capture icon %}{% include {{footer_icon.icon}} %}{% endcapture %}
+                <span class="align-middle text-secondary pr-2">{{ icon | strip }}</span>{% endif %}<span>{{ footer_icon.username }}</span>
               </a>
             </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-            <li>
-              <a href="https://twitter.com/{{ site.twitter_username }}">
-                <span class="pr-1 align-middle">{% include icon-twitter.svg %}</span>
-                <span>{{ site.twitter_username }}</span>
-              </a>
-            </li>
-          {% endif %}
+          {% endfor %}
         </ul>
       </div>
-      <div class="col-12 col-lg-6">
+      {% endif %}
+      <div class="col-12 col-lg">
         <p class="text-secondary text-justify">{{ site.description | escape }}</p>
       </div>
     </div>

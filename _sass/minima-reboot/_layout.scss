@@ -33,9 +33,6 @@ body {
   height: 1.5rem;
   width: 1.5rem;
   cursor: pointer;
-  svg {
-    fill: darken($layout-color-dark, 15%);
-  }
 }
 
 #nav-trigger:checked ~ #nav-menu {
@@ -61,16 +58,6 @@ body {
 
 #site-footer {
   border-top: 1px solid $layout-color-border;
-  a {
-    text-decoration: none;
-  }
-  a:hover :last-child {
-    text-decoration: underline;
-  }
-}
-
-#content #rss-icon, #site-footer svg {
-  fill: $layout-color-secondary;
 }
 
 .highlight {

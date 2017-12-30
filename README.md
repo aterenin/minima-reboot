@@ -80,6 +80,20 @@ minima_reboot:
 
 The format is specified exactly as in [Liquid templates](https://shopify.github.io/liquid/filters/date/).
 
+### Adding new links to footer
+
+New links with icons, such as the GitHub link in the preview, can be added to the footer as follows.
+
+```yaml
+footer_icons:
+  - username: aterenin/minima-reboot/
+    url: https://github.com/aterenin/minima-reboot/
+    icon: icon-github.svg
+```
+
+The `username` and `url` parameters are mandatory, the `icon` parameter is optional.
+This functionality supersedes `minima`'s `github_username` and `twitter_username`.
+
 ### Disqus Comments and Google Analytics
 
 These are enabled exactly as in `minima`.
