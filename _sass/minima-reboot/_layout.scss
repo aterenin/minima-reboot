@@ -59,12 +59,10 @@ body {
   border-top: 1px solid $layout-color-border;
 }
 
-.highlight {
+.highlight pre {
   border: 1px solid $layout-color-border;
   border-radius: .25rem;
   background-color: $layout-color-syntax-highlighting-background;
-  pre {
-    padding: 0.75rem;
-    margin-bottom: 0rem;
-  }
+  padding: 0.75rem;
+  margin-bottom: 1rem;
 }
