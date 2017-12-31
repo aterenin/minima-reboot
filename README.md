@@ -99,7 +99,7 @@ The front matter `inline` allows styles and scripts to be inlined to `<head>`.
 For example, consider adding the following to `posts.md`.
 
 ```yaml
-inline: "<style type=\"text/css\">td:first-child { width: 7rem; }</style>"
+inline: "<style>td:first-child { width: 7rem; }</style>"
 ```
 
 This will manually set the width of the date column in `posts.md`.
