@@ -95,11 +95,11 @@ This functionality supersedes Minima's `github_username` and `twitter_username`.
 
 ### Adding inline styles and scripts
 
-The front matter `inline` allows styles and scripts to be inlined to `<head>`.
+The front matter `head_inline` allows styles and scripts to be inlined to `<head>`.
 For example, consider adding the following to `posts.md`.
 
 ```yaml
-inline: "<style>td:first-child { width: 7rem; }</style>"
+head_inline: "<style>td:first-child { width: 7rem; }</style>"
 ```
 
 This will manually set the width of the date column in `posts.md`.
