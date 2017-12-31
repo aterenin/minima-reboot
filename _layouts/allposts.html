@@ -19,7 +19,7 @@ layout: page
 
   {% assign date_format = site.minima_reboot.date_format_short | default: "%b %-d" %}
   <tr>
-    <td class="text-right align-top text-truncate" style="width: 6rem;"><time class="text-secondary" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date: date_format }}</time></td>
+    <td class="text-right align-top text-truncate"><time class="text-secondary" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date: date_format }}</time></td>
     <td class="text-center align-top px-1">|</td>
     <td class="text-left align-top"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></td>
   </tr>

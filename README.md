@@ -93,6 +93,17 @@ footer_icons:
 The `username` and `url` parameters are mandatory, the `icon` parameter is optional.
 This functionality supersedes Minima's `github_username` and `twitter_username`.
 
+### Adding inline styles
+
+The front matter `inline_style` allows styles to be inlined to `<head>`.
+For example, consider adding the following to `posts.md`.
+
+```yaml
+inline_style: "<style>td:first-child { width: 7rem; }</style>"
+```
+
+This will manually set the width of the date column in `posts.md`.
+
 ### Disqus Comments and Google Analytics
 
 These are enabled exactly as in Minima.
