@@ -1,7 +1,6 @@
 $layout-color-border: #e9ecef !default;
 $layout-color-background: #fdfdfd !default;
 $layout-color-syntax-highlighting-background: #f8f9fa !default;
-$layout-responsive-nav-cutoff: 768px !default;
 
 body {
   background-color: $layout-color-background;
@@ -17,15 +16,13 @@ body {
 }
 
 #nav-menu-container {
-  @media (max-width: $layout-responsive-nav-cutoff - 1) {
-    position: absolute;
-    z-index: 100;
-    top: 0.4375rem;
-    right: 1rem;
-    border: 1px solid $layout-color-border;
-    border-radius: .25rem;
-    background-color: $layout-color-background;
-  }
+  position: absolute;
+  z-index: 100;
+  top: 0.4375rem;
+  right: 1rem;
+  border: 1px solid $layout-color-border;
+  border-radius: .25rem;
+  background-color: $layout-color-background;
 }
 
 #nav-trigger-label {
