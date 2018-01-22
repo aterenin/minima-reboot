@@ -46,7 +46,7 @@ layout: default
   {% endif %}
 
   {% if site.plugins contains "jekyll-feed" %}
-    <a href="{{ "/feed.xml" | relative_url }}"><span class="text-secondary">{% include icon-rss.svg %}</span></a>
+    <a href="{{ "/feed.xml" | relative_url }}"><div id="rss-icon" class="mb-2"></div></a>
   {% endif %}
 
 </div>
