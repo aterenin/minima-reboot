@@ -41,15 +41,13 @@ The following files are part of the `_includes` directory.
 
   - `disqus_comments.html`, `footer.html`, `google-analytics.html`, `head.html`, `header.html`, `icon-github`, `icon-twitter` &mdash; standard includes exactly as in [Minima](https://github.com/jekyll/minima).
   - `head-includes.html` &mdash; an empty text file where the user may add additional lines that will be inserted into `<head>`. If you want to customize Minima Reboot and need to include additional style sheets, add them here.
-  - `icon-menu.svg` &mdash; the icon used by the responsive navigation menu.
-  - `icon-rss.svg` &mdash; instead of displaying a text RSS link, Minima Reboot uses an icon.
 
 ### Sass
 
 The following files are part of the `_sass` directory.
 
   - `minima-reboot.scss` &mdash; loads the required style sheets.
-  - `minima-reboot/_layout.scss` &mdash; contains a few layout tweaks on top of Bootstrap's Reboot style, as well as the responsive navigation menu, for which Minima Reboot uses its own implementation, in `header.html` and this file, to avoid loading JavaScript.
+  - `minima-reboot/_layout.scss` &mdash; contains a few layout tweaks on top of Bootstrap's Reboot style, as well as an inline SVG for the RSS icon, and the responsive navigation menu, for which Minima Reboot uses its own implementation in `header.html` and this file to avoid loading JavaScript.
   - `minima-reboot/_syntax-highlighting.scss` &mdash; defines the colors used by Jekyll's syntax highlighting.
 
 ### Assets
