@@ -21,7 +21,7 @@ layout: page
   <tr>
     <td class="text-right align-top text-truncate"><time class="text-secondary" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date: date_format }}</time></td>
     <td class="text-center align-top px-1">|</td>
-    <td class="text-left align-top"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></td>
+    <td class="text-left align-top"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a></td>
   </tr>
 
   {% if forloop.last %}

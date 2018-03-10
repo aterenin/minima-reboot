@@ -39,7 +39,7 @@ The following files are part of the `_layouts` directory.
 
 The following files are part of the `_includes` directory.
 
-  - `disqus_comments.html`, `footer.html`, `google-analytics.html`, `head.html`, `header.html`, `icon-github`, `icon-twitter` &mdash; standard includes exactly as in [Minima](https://github.com/jekyll/minima).
+  - `disqus_comments.html`, `footer.html`, `google-analytics.html`, `head.html`, `header.html`, `icon-github` &mdash; standard includes exactly as in [Minima](https://github.com/jekyll/minima).
   - `head-includes.html` &mdash; an empty text file where the user may add additional lines that will be inserted into `<head>`. If you want to customize Minima Reboot and need to include additional style sheets, add them here.
 
 ### Sass
