@@ -107,6 +107,17 @@ This will manually set the width of the date column in `posts.md`.
 These are enabled exactly as in Minima.
 
 
+### Compression
+
+This theme uses HTML compression provided by [jekyll-compress-html](https://github.com/penibelst/jekyll-compress-html).
+To disable this, override `default.html`, and remove the lines
+```
+---
+layout: compress
+---
+```
+from the file's front matter.
+
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
