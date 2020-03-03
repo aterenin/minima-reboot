@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "minima-reboot"
-  spec.version       = "1.0.28"
+  spec.version       = "1.0.29"
   spec.authors       = ["Alexander Terenin"]
   spec.email         = ["aterenin@users.noreply.github.com"]
 
