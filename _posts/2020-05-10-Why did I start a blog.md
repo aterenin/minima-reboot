@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Why did I start a blog?"
+title: "About the blog"
 categories: meta
 ---
-####Practice, practice and practice...
+##### Because practice... I guess?
 
 ##### Sharing
 I've always had problems with communicating effectively. Recently, I got rattled during an interview and skipped important points when answering questions. When discussing with people, being able to share exactly what you think is beneficial. By sharing my experiences, thoughts, and ramblings, i'll hopefully get better at expressing myself and understanding how others think and feel.
