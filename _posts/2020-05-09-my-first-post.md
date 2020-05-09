@@ -3,8 +3,6 @@ layout: post
 title: "My first post!"
 categories: meta
 ---
-## Henlo world!
-
 I haven't really thought about much on what to do after setting up this blog.
 
 For my plans regarding this blog, here's a list off the top of my head:

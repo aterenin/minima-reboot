@@ -1,6 +1,6 @@
 title: AdrianTayag
-author: 
-email: 
+author:  
+email:  
 description: >
   A repository of personal thoughts, 
   technical adventures, and everything else 
@@ -22,7 +22,6 @@ minima_reboot:
 header_pages:
 - about.md
 - posts.md
-- github.md
 - resume.md
 
 footer_icons:
