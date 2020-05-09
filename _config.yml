@@ -2,8 +2,9 @@ title: Adrian Tayag
 author: Adrian Tayag
 email: 
 description: >
-  This is a repository of personal thoughts, technical adventures,
-  and everything else that I want to share to the strangers that
+  This is a repository of personal thoughts, 
+  technical adventures, and everything else 
+  that I want to share to the strangers that
   stumble upon this blog.
 
 theme: aterenin/minima-reboot
@@ -22,9 +23,10 @@ header_pages:
 - about.md
 - posts.md
 - github.md
+- resume.md
 
 footer_icons:
-- username: adriantayag
+- username: AdrianTayag
   url: https://github.com/adriantayag
   icon: icon-github.svg
 
