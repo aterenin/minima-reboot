@@ -3,7 +3,7 @@ layout: post
 title: "My first post!"
 categories: meta
 ---
-# Henlo world! (h1) 
+## Henlo world!
 
 I haven't really thought about much on what to do after setting up this blog.
 
