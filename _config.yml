@@ -1,11 +1,12 @@
-title: minima-reboot
-author: GitHub User
-email: your-email@domain.com
+title: Adrian Tayag
+author: Adrian Tayag
+email: 
 description: >
-  This is a demo page for minima-reboot, a bootstrap-based rewrite of Jekyll's
-  default minima theme. It is simple, lightweight, and responsive.
-  You can use it with your GitHub Pages site by adding the line
-  "theme: aterenin/minima-reboot" to _config.yml.
+  This is a repository of personal thoughts, technical adventures,
+  and everything else that I want to share to the strangers that
+  stumble upon this blog.
+
+theme: aterenin/minima-reboot
 
 plugins:
   - jekyll-seo-tag
@@ -23,8 +24,8 @@ header_pages:
 - github.md
 
 footer_icons:
-- username: aterenin/minima-reboot/
-  url: https://github.com/aterenin/minima-reboot/
+- username: adriantayag
+  url: https://github.com/adriantayag
   icon: icon-github.svg
 
 paginate: 5
