@@ -36,7 +36,8 @@ Despite having the Digispark board only 6 I/O pins (including the Reset pin), it
 * BH1750 Light intensity Sensor - I2C 0x24 address
 * 1602 LCD Display - I2C 0x27 address
 
-###Dealing with Digispark / ATtiny  
+### Dealing with Digispark / ATtiny  
+[GrowEnv-Sensor Repository](https://github.com/AdrianTayag/GrowEnv-Sensor)  
 Creating a simple sketch to make these sensors and modules work with the Arduino Micro was pretty easy with the libraries available online. 
 
 However, it is a different story when dealing with ATtiny based chips. Specifically with finding libraries for the sensors that I am using since the Digispark board only works with the Tinywire library - of which is the backbone for a most sensor libraries such as the BH1750 Light Intensity Sensor. Some have ports for Tinywire such as TinyDHT and TinyRTC.
