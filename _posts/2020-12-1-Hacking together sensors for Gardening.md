@@ -3,7 +3,7 @@ layout: post
 title: "Hacking together sensors for Gardening"
 categories: diy
 ---
-####Introduction
+###Introduction  
 Around late 2019, I ordered a bunch of sensors and modules for tinkering - mostly sensors useful for gardening. The finished product consists of sensors which measures the variables listed below:
 
 * Temperature and Relative Humidity
@@ -21,12 +21,12 @@ This module was made to quickly evaluate growing conditions on certain spots of 
 
 The working prototype was completed last May 2020 and it's been on the cabinet for a while after I made it work on a breadboard using my Arduino micro. It was only until November 2020 that I picked it up again and modified the Arduino sketch to run on my Digispark board to finish the project.
 
-####Wiring
+###Wiring  
 ![Project Wiring Schematic](/assets/gardening/Wiring_Schematic.jpg)
 
 Despite having the Digispark board only 6 I/O pins (including the Reset pin), it can accomodate a whole lot of sensors by utilizing the the I2C Bus. 
 
-#####Modules used
+#####Modules used  
 
 ![Sensors/Modules Laydown](/assets/gardening/IMG_5.jpg)
 * DHT11 Temp & Humidity Sensor - 1 digital pin
@@ -36,20 +36,20 @@ Despite having the Digispark board only 6 I/O pins (including the Reset pin), it
 * BH1750 Light intensity Sensor - I2C 0x24 address
 * 1602 LCD Display - I2C 0x27 address
 
-#####Dealing with Digispark / ATtiny
+###Dealing with Digispark / ATtiny  
 Creating a simple sketch to make these sensors and modules work with the Arduino Micro was pretty easy with the libraries available online. 
 
 However, it is a different story when dealing with ATtiny based chips. Specifically with finding libraries for the sensors that I am using since the Digispark board only works with the Tinywire library - of which is the backbone for a most sensor libraries such as the BH1750 Light Intensity Sensor. Some have ports for Tinywire such as TinyDHT and TinyRTC.
 
 Luckily, there is [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore) - an Arduino Core for the ATtiny processors which allows us to use Wire.h and its supporting libraries. Meaning, we can just treat the Digispark board like an Arduino Micro which we used for prototyping this project.
 
-#####Limitations of Digispark
+###Limitations of Digispark  
 * It can only accomodate 6012 bytes for uploading sketch.
 * Most of the functionalities share I/O pins to achieve this form factor.
 * Following the point above, ADCs have low input impedance and might affect your readings.
 * For Digispark clones (like mine), P5 is assigned to RESET and you'll need an ISP to remove it and utilize for other functionalities.
 
-#####Work to be Done
+###Work to be Done  
 * Optimize the code to fit in the code for the RGB Color sensor
 * Find a work around to make the Soil Moisture sensor work with the ADC limitations
 * Add a USB extension for easier connection to powerbank
