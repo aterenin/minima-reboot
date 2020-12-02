@@ -22,7 +22,7 @@ This module was made to quickly evaluate growing conditions on certain spots of 
 The working prototype was completed last May 2020 and it's been on the cabinet for a while after I made it work on a breadboard using my Arduino micro. It was only until November 2020 that I picked it up again and modified the Arduino sketch to run on my Digispark board to finish the project.
 
 ### Wiring  
-![Project Wiring Schematic](/assets/gardening/Wiring_Schematic.jpg)
+![Project Wiring Schematic](/assets/gardening/WiringSchematic.jpg)
 
 Despite having the Digispark board only 6 I/O pins (including the Reset pin), it can accomodate a whole lot of sensors by utilizing the the I2C Bus. 
 
@@ -42,7 +42,11 @@ Creating a simple sketch to make these sensors and modules work with the Arduino
 
 However, it is a different story when dealing with ATtiny based chips. Specifically with finding libraries for the sensors that I am using since the Digispark board only works with the Tinywire library - of which is the backbone for a most sensor libraries such as the BH1750 Light Intensity Sensor. Some have ports for Tinywire such as TinyDHT and TinyRTC.
 
-Luckily, there is [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore) - an Arduino Core for the ATtiny processors which allows us to use Wire.h and its supporting libraries. Meaning, we can just treat the Digispark board like an Arduino Micro which we used for prototyping this project.
+Luckily, there is [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore) - an Arduino Core for the ATtiny processors which allows us to use Wire.h and its supporting libraries. Meaning, we can just treat the Digispark board like an Arduino Micro which we used for prototyping this project.  
+
+I wasn't able to cram in the RGB Color Sensor functionality due to the limited merory of the Digispark. Also, the Soil Moisture Sensor readings are kinda wonky probably due to the low input impedance of ADC since it shares pins with the USB data lines which requires specific components to work (shown below)
+
+![Project Wiring Schematic](/assets/gardening/DigisparkSchematic.jpg)
 
 ### Limitations of Digispark  
 * It can only accomodate 6012 bytes for uploading sketch.
@@ -52,6 +56,6 @@ Luckily, there is [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore) - an A
 
 ### Work to be Done  
 * Optimize the code to fit in the code for the RGB Color sensor
-* Find a work around to make the Soil Moisture sensor work with the ADC limitations
+* Find a work around to make the Soil Moisture sensor properly work with the ADC limitations
 * Add a USB extension for easier connection to powerbank
 * Simple enclosure / Standoff to prevent shorting at the back
