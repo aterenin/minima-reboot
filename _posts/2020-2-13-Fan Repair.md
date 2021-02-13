@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Repair Bin: Kyowa NTMRF8"
+title: "Repair Bin: Tough Mama NTMRF8"
 categories: teardown, repair
 ---
 ![The fan](/assets/teardown/Fan.png)
 
-### The Portable Fan / Radio / Light / Powerbank 
+### Portable Fan / Radio / Light / Powerbank 
 
 This multifunctional rechargeable fan has been pretty good. However, it's not able to charge and kept the battery drained recently. There were popping noises on the unit whenever I plug it in and there is certainly something wrong with it.
 
@@ -37,3 +37,7 @@ The main board seems to be a single layer copper PCB.
 ![Main board Back](/assets/teardown/control_back.jpg)
 
 The PCB is tightly packed, a more thorough analysis on this board might be nice.
+
+![Battery Pack](/assets/teardown/battery.jpg)
+
+Here's the specifications for the battery pack they used.
