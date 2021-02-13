@@ -3,6 +3,8 @@ layout: post
 title: "Hacking together sensors for Gardening"
 categories: diy
 ---
+![Product Showcase](/assets/gardening/IMG_1.jpg)
+
 ### Introduction  
 Around late 2019, I ordered a bunch of sensors and modules for tinkering - mostly sensors useful for gardening. The finished product consists of sensors which measures the variables listed below:
 
