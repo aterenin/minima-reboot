@@ -7,7 +7,7 @@ description: >
   that I want to share to the strangers that
   stumble upon this blog.
 
-theme: aterenin/minima-reboot
+remote_theme: aterenin/minima-reboot
 
 plugins:
   - jekyll-seo-tag
