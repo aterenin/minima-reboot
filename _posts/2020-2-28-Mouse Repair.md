@@ -19,7 +19,7 @@ The switches are already replaced with Kailh GM 4.0 switches so there's probably
 Disassembly was pretty easy, four (4) screws are hidden behind the mouse feet. Removal of the flex cable and battery connectors are pretty easy. 
 
 ### The cause
-![Flex cable](/assets/mouse_repair/flex.jpg)
+![Flex cable](/assets/mouse_repair/Flex.jpg)
 
 The flex cable was pretty worn out and was probably part of the cause of the intermittent switches. The G603 uses an 8-pin, 0.5mm pitch FFC cable. The solder pads for the left click were lifted (admitted by the previous owner) so I had to sand some part of the pcb and reroute the connection.
 
