@@ -9,9 +9,9 @@ layout: default
 <div id="content">
 
   {% if site.paginate %}
-    {% assign posts = paginator.posts %}
+    {% assign posts = paginator.posts | reverse %}
   {% else %}
-    {% assign posts = site.posts %}
+    {% assign posts = site.posts | reverse %}
   {% endif %}
 
   <ul class="list-unstyled m-0">
