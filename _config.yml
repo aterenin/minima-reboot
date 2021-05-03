@@ -31,6 +31,8 @@ paginate: 5
 
 markdown: kramdown
 
+include_bsscripts: false
+
 exclude:
   - Gemfile
   - Gemfile.lock
