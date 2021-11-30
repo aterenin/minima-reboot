@@ -7,14 +7,15 @@ categories: teardown, build
 
 # Lingyi Blackwidow TKL Keyboard
 
-This keyboard was bought along the Logitech G603 mouse as a bundle. I received it in barebones form - case, pcb, and stabilizers only. Thus, this was set aside for a while switches and keycaps are costly.
+This keyboard was bought along the Logitech G603 mouse as a bundle. I received it in barebones form - case, pcb, and stabilizers only. Thus, this was set aside for a while since switches and keycaps are costly.
 
 ![PCB Hooks](/assets/lingyi_build/IMG_4.jpg)
+
 Here's the exact model of the keyboard
 
 I currently have a modded chinese keyboard with Kailh BOX whites. They are plently loud with the clickbar mechanism in BOX switches. For this new board, i'd like to try silent linear switches for a change.
 
-#Overview
+# Overview
 
 ![Product Showcase](/assets/lingyi_build/IMG_1.jpg)
 
@@ -28,7 +29,7 @@ The single-sided PCB uses uses 0 ohm resistors as jumpers to complete the circui
 
 The PCB is secured to the plate with twistable steel hooks. Not very elegant, but it works. 
 
-#Painting
+# Painting
 
 ![Plate and mouse painting](/assets/lingyi_build/IMG_5.jpg)
 
