@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Hacking together sensors for Gardening"
+title: "Build: Hacking together sensors for Gardening"
 categories: diy
 ---
-![Product Showcase](/assets/gardening/IMG_1.jpg)
+![Product Showcase](/assets/digispark_gardening/IMG_1.jpg)
 
 ### Introduction  
 Around late 2019, I ordered a bunch of sensors and modules for tinkering - mostly sensors useful for gardening. The finished product consists of sensors which measures the variables listed below:
@@ -15,22 +15,22 @@ Around late 2019, I ordered a bunch of sensors and modules for tinkering - mostl
 
 I've also added a Real Time Clock module and 16x2 LCD Display. The project runs on a Digispark board to minimize cost and to mess with ATtiny based chips - in this case, the ATtiny85.
 
-![Product Showcase](/assets/gardening/IMG_2.jpg)
+![Product Showcase](/assets/digispark_gardening/IMG_2.jpg)
 
 This module was made to quickly evaluate growing conditions on certain spots of the house. It's not really meant to be permanently placed on a growing setup for data gathering. Rather, I plan on storing it in a toolbox as a quick measuring device for the variables listed above.
 
-![Prototype using Arduino Micro](/assets/gardening/IMG_4.png)
+![Prototype using Arduino Micro](/assets/digispark_gardening/IMG_4.png)
 
 The working prototype was completed last May 2020 and it's been on the cabinet for a while after I made it work on a breadboard using my Arduino micro. It was only until November 2020 that I picked it up again and modified the Arduino sketch to run on my Digispark board to finish the project.
 
 ### Wiring  
-![Project Wiring Schematic](/assets/gardening/WiringSchematic.jpg)
+![Project Wiring Schematic](/assets/digispark_gardening/WiringSchematic.jpg)
 
 Despite having the Digispark board only 6 I/O pins (including the Reset pin), it can accomodate a whole lot of sensors by utilizing the the I2C Bus. 
 
 ### Modules used  
 
-![Sensors/Modules Laydown](/assets/gardening/IMG_5.jpg)
+![Sensors/Modules Laydown](/assets/digispark_gardening/IMG_5.jpg)
 * DHT11 Temp & Humidity Sensor - 1 digital pin
 * Soil Moisture Sensor - 1 analog pin
 * TinyRTC Clock Module - I2C 0x68 address
@@ -48,7 +48,7 @@ Luckily, there is [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore) - an A
 
 I wasn't able to cram in the RGB Color Sensor functionality due to the limited merory of the Digispark. Also, the Soil Moisture Sensor readings are kinda wonky probably due to the low input impedance of ADC since it shares pins with the USB data lines which requires specific components to work (shown below)
 
-![Project Wiring Schematic](/assets/gardening/DigisparkSchematic.jpg)
+![Project Wiring Schematic](/assets/digispark_gardening/DigisparkSchematic.jpg)
 
 ### Limitations of Digispark  
 * It can only accomodate 6012 bytes for uploading sketch.
