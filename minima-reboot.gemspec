@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "minima-reboot"
-  spec.version       = "1.0.32"
+  spec.version       = "1.0.33"
   spec.authors       = ["Alexander Terenin"]
   spec.email         = ["aterenin@users.noreply.github.com"]
 
@@ -20,5 +20,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "jekyll-feed", "~> 0.15"
   spec.add_development_dependency "jekyll-paginate", "~> 1.1"
   spec.add_development_dependency "jekyll-redirect-from", "~> 0.16"
+  spec.add_development_dependency "kramdown-parser-gfm", "~> 1.1"
+
   spec.add_development_dependency "bundler", "~> 2.2"
 end
