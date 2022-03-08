@@ -3,29 +3,33 @@ layout: post
 title: "Unboxing: NMB Hi-Tek Keyboards"
 categories: unboxing, review
 ---
-![Overview](insert pic with exposed switches)
+![Overview](/assets/si_boards/overview.jpg)
 
 ### NMB Hi-Tek Keyboards
 
 Tell story on how i got in at the last moment
 
 ### Overview
-![Top](insert top view here)
+![Top](/assets/si_boards/shipment.jpg)
 
 Basic details, weight, year, switches
 
 ### Typing impressions
-![Usage](insert workspace picture here)
+![Usage](/assets/si_boards/workspace.jpg)
 
 Discuss switch feel and some specs
 
 ### Disassembly
-![PCB](insert disassembly pic here)
+![PCB](/assets/si_boards/disassembly.png)
 
 Discuss pcb characteristics, molding marks etc
 
 ### Modifications
 
-![Modifications](insert custom boards here?)
+![Modifications](/assets/si_boards/modification.jpg)
 
 Insert 60% PCBs here, lubing vids etc
+
+![Others](/assets/si_boards/top.jpg)
+
+Insert SI clicky variant thoughts here
